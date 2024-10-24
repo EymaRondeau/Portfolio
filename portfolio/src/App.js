@@ -7,6 +7,7 @@ import ProjectDetail from './pages/ProjectDetail'; // Ajoutez l'importation
 import About from './pages/About'; // Importation de la page À propos
 import Projects from './pages/Projects'; // Importation de la page Projets
 import Contact from './pages/Contact'; // Importation de la page Contact
+import Error404 from './components/Error404';
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
         <Route path="/projects" element={<Projects />} /> {/* Affiche la page Projets */}
         <Route path="/projects/:id" element={<ProjectDetail />} /> {/* Affiche la page de détail du projet */}
         <Route path="/contact" element={<Contact />} /> {/* Affiche la page Contact */}
+        <Route path="*" element={<Error404 />} /> {/* Route pour gérer 404 */}
       </Routes>
       <Footer />
     </Router>

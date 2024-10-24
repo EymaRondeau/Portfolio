@@ -1,0 +1,29 @@
+.error-container {
+    text-align: center;
+    padding: 50px;
+  
+    h1 {
+      font-size: 80px;
+      color: #5b4f47;
+      margin-bottom: 20px;
+    }
+  
+    p {
+      font-size: 18px;
+    }
+  
+    .return-button {
+      display: inline-block;
+      margin-top: 30px;
+      margin-bottom: 40px;
+      padding: 10px 20px;
+      background-color: #917e71; /* Couleur de fond marron pour le bouton */
+      color: white; /* Couleur du texte en blanc */
+      text-decoration: none; /* Supprime le soulignement */
+      border-radius: 5px; /* Coins arrondis */
+    }
+  
+    .return-button:hover {
+      background-color: #5b4f47;
+    }
+  }
