@@ -7,7 +7,7 @@ const Header = () => {
     <header>
       <div className="logo">
         <NavLink to="/"> {/* Ajout du NavLink pour rediriger vers la page d'accueil */}
-          <img src={process.env.PUBLIC_URL + '/images/mehdi-logo.png'} alt="Logo" />
+          <img src={process.env.PUBLIC_URL + '/images/eyma-logo.png'} alt="Logo" />
         </NavLink>
       </div>
       <nav>
