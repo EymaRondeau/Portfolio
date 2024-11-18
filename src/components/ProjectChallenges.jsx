@@ -1,5 +1,5 @@
 import React from 'react';
-import '../styles/ProjectChallenges.scss'; // Assurez-vous que le fichier CSS est bien importé
+import '../styles/ProjectChallenges.scss';
 
 const ProjectChallenges = ({ challenges, skills }) => {
   return (

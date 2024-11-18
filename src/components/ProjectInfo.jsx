@@ -5,7 +5,7 @@ const ProjectInfo = ({ project }) => {
   return (
     <section className="project-info-section">
       <div className="project-info-container">
-        <div className="project-detail-image"> {/* Utiliser une nouvelle classe pour éviter les conflits */}
+        <div className="project-detail-image">
           <img src={process.env.PUBLIC_URL + '/' + project['image-details']} alt={project.title} />
         </div>
         <div className="project-info">

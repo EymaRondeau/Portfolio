@@ -1,15 +1,16 @@
 import React from 'react';
-import { useParams } from 'react-router-dom';
+import { useParams, Navigate } from 'react-router-dom'; // Import de Navigate
 import projectsData from '../data/projects.json'; 
 import ProjectInfo from '../components/ProjectInfo'; 
 import ProjectChallenges from '../components/ProjectChallenges'; 
 
 const ProjectDetail = () => {
-    const { id } = useParams();
-    const project = projectsData.find((proj) => proj.id === parseInt(id));
+  const { id } = useParams();
+  const project = projectsData.find((proj) => proj.id === parseInt(id));
 
+  // Si le projet n'est pas trouvé, redirige vers la page 404
   if (!project) {
-    return <div>Projet non trouvé</div>;
+    return <Navigate to="*" />;
   }
 
   return (

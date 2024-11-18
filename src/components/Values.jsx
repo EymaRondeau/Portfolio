@@ -1,5 +1,5 @@
 import React from 'react';
-import '../styles/Values.scss'; // Assurez-vous que le chemin est correct
+import '../styles/Values.scss';
 
 const Values = () => {
   return (
